@@ -174,7 +174,7 @@ Aus "Hier bin ich!" soll "!hci nib reiH" werden.
 
 ## Wörterbuch -  Dictionary
 
-Der Datentyp **dict** bisher einziger Mapping-Datentyp in Python.  Der Datentyp besteht aus ungeordneten **Key** -> **Value**. 
+Der Datentyp **dict** bisher einziger Mapping-Datentyp in Python.  Der Datentyp besteht aus ungeordneten **Key** -> **Value** Paaren. 
 
 ```python
 d = { Kind1: 12, Kind2: 15, Vater: 49}
@@ -190,7 +190,7 @@ Der Key besteht idealerweise aus einem String oder einer Zahl. Jeder Key darf nu
 
 Die Values können von einem beliebigen Typ sein.
 
-Auf die Values wird direkt über den Key zugegriffen (auslesen, ändern neues Mapping hinzufügen).
+Auf die Values wird direkt über den Key zugegriffen (auslesen, ändern, neues Mapping hinzufügen).
 
 ```python
 >>> d[Kind1]

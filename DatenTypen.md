@@ -177,15 +177,15 @@ Aus "Hier bin ich!" soll "!hci nib reiH" werden.
 Der Datentyp **dict** bisher einziger Mapping-Datentyp in Python.  Der Datentyp besteht aus ungeordneten **Key** -> **Value** Paaren. 
 
 ```python
-d = { Kind1: 12, Kind2: 15, Vater: 49}
+d = { "Kind1": 12, "Kind2": 15, "Vater": 49}
 ```
 
 Der Key besteht idealerweise aus einem String oder einer Zahl. Jeder Key darf nur einmal vorkommen, d.h. 
 
 ```python
->>> d = { Kind1: 12, Kind2: 15, Vater: 49, Vater: 48} 
+>>> d = { "Kind1": 12, "Kind2": 15, "Vater": 49, "Vater": 48} 
 >>> d
-{Kind1: 12, Kind2: 15, Vater: 48}
+{"Kind1": 12, "Kind2": 15, "Vater": 48}
 ```
 
 Die Values können von einem beliebigen Typ sein.
@@ -193,14 +193,18 @@ Die Values können von einem beliebigen Typ sein.
 Auf die Values wird direkt über den Key zugegriffen (auslesen, ändern, neues Mapping hinzufügen).
 
 ```python
->>> d[Kind1]
+>>> d["Kind1"]
 12
->>> d[Vater] = 49
+>>> d["Vater"] = 49
 >>> d
-{Kind1: 12, Kind2: 15, Vater: 49}
->>> d[Mutter] = 50
+{"Kind1": 12, "Kind2": 15, "Vater": 49}
+>>> d["Mutter"] = 50
 >>> d
-{Kind1: 12, Kind2: 15, Vater: 49, Mutter: 50}
+{"Kind1": 12, "Kind2": 15, "Vater": 49, "Mutter": 50}
 ```
 
+
+## Komplexe Datenstruktururen
+
+Als komplexe Datenstrukturen bezeichnet man die Verknüpfung von Listen und Wörterbüchern (`dict`). 
 
